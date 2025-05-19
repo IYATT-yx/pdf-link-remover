@@ -1,11 +1,12 @@
 from uimain import Main
+from buildtime import buildTime
 
 import tkinter as tk
 import os
 
 def main():
     root = tk.Tk()
-    root.title("PDF 链接移除器")
+    root.title(f"PDF 链接移除器（IYATT-yx iyatt@iyatt.com {buildTime}）")
     root.iconbitmap(
         os.path.join(
             os.path.dirname(__file__),
