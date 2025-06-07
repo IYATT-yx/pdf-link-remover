@@ -77,7 +77,7 @@ class Main(tk.Frame):
         for count in range(nums):
             file = files[count]
             self.modifyExecutableButtonText(f'{count+1}/{nums} {file}：正在处理中...')
-            PdfTools.removeUrlTextElements(file, file + '.pdf', keyText)
+            PdfTools.findAndClearObjectText(file, file + '.pdf', keyText)
         self.modifyExecutableButtonText(f'{nums}个文件处理完成')
         self.resetExecutableButtonText()
 
