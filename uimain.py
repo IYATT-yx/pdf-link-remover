@@ -13,7 +13,7 @@ class Main(tk.Frame):
 
     def create(self):
         tk.Label(self, text='目标文件：').grid(row=0, column=0, sticky=tk.W)
-        tk.Label(self, text='移除元素包含的文本（默认移除包含链接的元素）：').grid(row=1, column=0, sticky=tk.W)
+        tk.Label(self, text='要清除的文本内容（默认清除链接）：').grid(row=1, column=0, sticky=tk.W)
 
         self.filesValue = tk.StringVar()
         self.keyTextValue = tk.StringVar()
